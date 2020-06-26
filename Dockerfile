@@ -1,4 +1,4 @@
-FROM ubuntu:eoan
+FROM ubuntu:focal
 ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt-get update && \
@@ -8,7 +8,7 @@ RUN apt-get update && \
                        liblz4-dev graphviz && \
     apt-get clean
 
-ENV ROCKSDB_VERSION=v5.18.3
+ENV ROCKSDB_VERSION=v6.10.2
 
 RUN mkdir /build
 
