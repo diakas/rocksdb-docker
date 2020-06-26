@@ -1,5 +1,4 @@
-FROM ubuntu:focal
-ENV DEBIAN_FRONTEND="noninteractive"
+FROM ubuntu:bionic
 
 RUN apt-get update && \
     apt-get upgrade -y && \
